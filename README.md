@@ -8,10 +8,11 @@ A simple CRUD for manage contacts using Laravel 8. All transaccions work through
 
 ### Tech stack
 
-**BACK END & REST API**: Laravel 8
+*BACK END & REST API*: Laravel 8
 
-**FRONT END** Blade | Javascript | Bootstrap.
+*FRONT END*: Blade | Javascript | Bootstrap.
 
+*DATABASE*: Mysql
 
 
 ### Installation && Configurations
@@ -19,7 +20,7 @@ A simple CRUD for manage contacts using Laravel 8. All transaccions work through
 
 **Create database**
 
-I'm using Msyql
+I'm using Msyql.
 
 **Create .env file & Configure database** 
 
@@ -52,9 +53,9 @@ I'm using Msyql
 
 ### Artisan commands
 
-**Generate the laravel key**
+**Generate the laravel key && copy/paste in APP_KEY env var**
 
-    php artisan key:generate
+    php artisan key:generate --show
 
 **Running Migrations**
 
