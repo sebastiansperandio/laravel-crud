@@ -1,46 +1,116 @@
-## Laravel Boilerplate (Current: Laravel 8.*) ([Demo](https://demo.laravel-boilerplate.com))
+## Contacts CRUD (Laravel 8) ([Demo]())
 
-[![Latest Stable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/stable)](https://packagist.org/packages/rappasoft/laravel-boilerplate)
-[![Latest Unstable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/unstable)](https://packagist.org/packages/rappasoft/laravel-boilerplate) 
-<br/>
-[![StyleCI](https://styleci.io/repos/30171828/shield?style=plastic)](https://github.styleci.io/repos/30171828)
-![Tests](https://github.com/rappasoft/laravel-boilerplate/workflows/Tests/badge.svg?branch=master)
-<br/>
-![GitHub contributors](https://img.shields.io/github/contributors/rappasoft/laravel-boilerplate.svg)
-![GitHub stars](https://img.shields.io/github/stars/rappasoft/laravel-boilerplate.svg?style=social)
+### Introduction
 
-### Demo Credentials
+A simple CRUD for manage contacts using Laravel 8. All transaccions work through an REST API.
 
-**Admin:** admin@admin.com  
-**Password:** secret
 
-**User:** user@user.com  
-**Password:** secret
+
+### Tech stack
+
+**BACK END & REST API**: Laravel 8
+
+**FRONT END** Blade | Javascript | Bootstrap.
+
+
+
+### Installation && Configurations
+
+
+**Create database**
+
+I'm using Msyql
+
+**Create .env file & Configure database** 
+
+    # Database
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=database
+    DB_USERNAME=username
+    DB_PASSWORD=password
+
+*(.env file could be a copy of .env.example file given in the root directory)*
+
+*REPLACE:*
+
+**{database}** *by your database name created.*
+
+**{username}** *by your username name created.*
+
+**{password}** *by your password created.*
+
+**Install PHP and JS dependencies**
+
+    composer install
+
+    npm install
+
+*(you could use **npm run production** or **npm run watch** if you want to modify the code)*
+
+
+
+### Artisan commands
+
+**Generate the laravel key**
+
+    php artisan key:generate
+
+**Running Migrations**
+
+    php artisan migrate
+
+**Seed the database**
+
+    php artisan db:seed
+
+**Serving Laravel**
+
+    php artisan serve
+
+**NPM**
+Styles and Scripts are generated using [Laravel Mix](https://laravel.com/docs/8.x/mix).
+
+    npm run <command>
+
+(Example: **npm run dev** or **npm run prod** or **npm run watch**)
+
+**Storage link**
+
+    php artisan storage:link
+
+
+
+### API Documentation
+
+*Get all contacts*
+
+**GET** | /contacts
+
+*Get a specific contact by id*
+
+**GET** | /contacts/{id}/view
+
+*Create a new contact - (Data needed: name\*, last_name\*, email\*, phone1, phone2, phone3)*
+
+**POST** | /contacts
+
+*Edit a specific contact*
+
+**PUT** | /contacts/{id}
+
+*Delete a specific contact*
+
+**DELETE** | /contacts/{id}
+
+
+
+## It is based on Laravel Boilerplate (Current: Laravel 8.*)
 
 ### Official Documentation
 
 [Click here for the official documentation](http://laravel-boilerplate.com)
 
-### Slack Channel
-
-Please join us in our Slack channel to get faster responses to your questions. Get your invite here: https://laravel-5-boilerplate.herokuapp.com
-
-### Introduction
-
-Laravel Boilerplate provides you with a massive head start on any size web application. Out of the box it has features like a backend built on CoreUI with Spatie/Permission authorization. It has a frontend scaffold built on Bootstrap 4. Other features such as Two Factor Authentication, User/Role management, searchable/sortable tables built on my [Laravel Livewire tables plugin](https://github.com/rappasoft/laravel-livewire-tables), user impersonation, timezone support, multi-lingual support with 20+ built in languages, demo mode, and much more.
-
-### Issues
-
-If you come across any issues please [report them here](https://github.com/rappasoft/laravel-boilerplate/issues).
-
-### Contributing
-
-Thank you for considering contributing to the Laravel Boilerplate project! Please feel free to make any pull requests, or e-mail me a feature request you would like to see in the future to Anthony Rappa at rappa819@gmail.com.
-
-### Security Vulnerabilities
-
-If you discover a security vulnerability within this boilerplate, please send an e-mail to Anthony Rappa at rappa819@gmail.com, or create a pull request if possible. All security vulnerabilities will be promptly addressed.
-
-### License
+### License of Laravel Boilerplate
 
 MIT: [http://anthony.mit-license.org](http://anthony.mit-license.org)
